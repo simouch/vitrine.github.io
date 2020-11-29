@@ -4,6 +4,11 @@
 #bars,
 #nav2 {
   display: none;
+  /* position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 30px;
+  left: 150px;*/
 }
 html {
   font-size: 16px;
@@ -36,7 +41,7 @@ header {
   height: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 5% 10%;
   background-image: url("../images/test.jpg");
   background-position: center;
@@ -50,14 +55,15 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 #logo {
+  margin-top: 0px;
   font-size: 24px;
 }
 a {
   padding: 0px 10px;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
@@ -224,6 +230,7 @@ footer h1 {
 span {
   color: #a31621;
 }
+
 a:hover {
   color: #a31621;
   transition: color 500ms ease-in;
@@ -238,25 +245,20 @@ a:active {
 #logo {
   font-family: "Wellfleet", cursive;
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 600px) {
   header a {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 451px) {
-  header a {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  nav {
-    display: none;
+    font-size: 11px;
   }
 
+  #logo {
+    font-size: 10px;
+  }
   #bars {
     display: block;
     width: 7%;
   }
+
   .flexContainer2 h1 {
     font-size: 32px;
   }
@@ -272,6 +274,13 @@ a:active {
   .card:hover {
     padding: 4% 3%;
     font-size: 7px;
+  }
+  header a {
+    font-size: 15px;
+  }
+
+  #logo {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -300,7 +309,7 @@ a:active {
   }
 }
 @media only screen and (max-width: 500px) {
-  #product h2 {
+  #parcours h2 {
     font-size: 22px;
   }
 }
@@ -486,4 +495,9 @@ footer {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
+}
+.font {
+  font-size: 40px;
+}
+@media (max-width: 650px) {
 }
